@@ -33,12 +33,12 @@
     <section class="hero">
 
       <h2 class="project-title">
-        Photo<br>
-        Application
+        Crunch Wokout<br>
+        Booker
       </h2>
 
       <p class="hero-subtext">
-        A full stack web application developed to allow users to post, like, and share images freely.
+        A small backend projects designed to auto mate the task of searching though a website and booking workout classes.
       </p>
 
     </section>
@@ -55,17 +55,15 @@
       <div class="process-card">
 
         <div class="card-top">
-          <h4>Sprint 1</h4>
-          <span class="date">Feb 4, 2026</span>
+          <h4>Problem to be solved</h4>
+          <span class="date">Nov 23 2025</span>
         </div>
 
         <p>
-          This week began the first spring of the Photo App, an application template we recieved as part of my teams most recent academic assignment.
-          While I am more familiar with front end than back end, I agree that a developer should be well rounded across the entire process, and be capable of performing any roll with competence. 
-          My task was to convert the current [userDetail] component to have the populating information be retrieved and uploaded into the preset React template. 
-          I will admit this was much more difficult than I assumed it would be; first I added a constructor to represent a user before having its data populated, 
-          next was a series of checks to determine if the component itself sucessfully loaded and updated the current users information, lastly was the render function to take this updated data and project it into the html file using the provided React template. 
-          Overall this was a good challenge and took me quite some time to figure out, but I feel I have earned a lot from the experience and hope to improve further.
+          For a number of months I've noticed my parets often set alarms to remind them to book their gym classes. This current approach results is missed classes, rushing, and extreme fustration for both of them, so i stepped in to offer a solution.
+          I decided the easiest way to overcome this challenge would be to have something to keep track of their planned classes, but that also broat with it the issue of them having to set their calenders. 
+          So finally i figured it out what I wanted to do, and built a system where all they needed was to list what they wanted. 
+          Enter the desired class into a document, and the system handles the rest. 
         </p>
 
       </div>
@@ -74,16 +72,15 @@
       <div class="process-card">
 
         <div class="card-top">
-          <h4>Sprint 2</h4>
-          <span class="date">Feb 12, 2026</span>
+          <h4>Building</h4>
+          <span class="date">Dec 16, 2025</span>
         </div>
 
         <p>
-          This second sprint was my first experience with MongoDB. Innitialy I assumed it would be similar to SQL which I have some experience using, but I was completely wrong. 
-          I was surprised to find these databases were so different, so much in fact, that very same day I began watching tutorials and reading notes on those differences and how to even make use of Mongo. 
-          Simple setup to my and many of my teamates devices was difficult to say the least, with constant bugs, operating systems, and differences in our respective machines causing many issues with coordination.
-          After clearing these challenges were able to actually complete the assignment as intended. I was responsible for removing the servers depencency on the model and route requests to Mongo.
-          Since everything else about Mongo was setup beforehand, my task was not nearly as difficult as the first. I removed the lines calling the model and replaced it with a Mongo query requesting the [userDetails] mentioned earlier.
+          I have finally staryed building the program, and with it being almost 100% backend work, I'm finding it very difficult. The first step is to make sure this idea even works, and the first step to that is learning to automate.
+          I found Selenium and Chromium two very powerful and free tools for automation. Using these tools, I split the work into 4 files; the driver, the configuration, the login function, the class booking. 
+          The first file created was the login finction since at this point I was there to monitor the outcome in real time. After starting the driver, I would have it navigate directly to the login page via a hardcoded url, this is certainly not the best choice, but this is a simple gift to close friends and family. 
+          Afterwards the driver would look the html for classes indicating the username and password fields and send the keys coded into the file. This step, after much struggle, succeded allowing me to move onto to booking the classes themselves.
         </p>
 
       </div>
@@ -93,37 +90,21 @@
 
         <div class="card-top">
           <h4>Sprint 3</h4>
-          <span class="date">March 07, 2026</span>
+          <span class="date">Dec 18, 2025</span> 
         </div>
 
         <p>
-          In this third sprint I was responsible for creating the login function for users, once again making use of MongoDB in order to retrieve user information like usermane and passwords.
-          First I had to locate the schemas being used to control the shape of what a "user" is, after that, within the login function I called that schema and checked the input credentials against those already stored in the database. 
-          After validation the function either returned the correct information or an appropriate error message. 
-          This step was fairly straightforward, especially compared to what others on my team were assigned as their tasks. 
+          The next step was to make sure the program could navigate from the login screen to the form where classes are reserved and processed.
+          Fundementally it was similar to the first step so this was not too much harder, it added more elements to jump across. After ensuring the project worked within this limited scope, the next step was to make it run automatically.
+          This step was challenging as I have never done something quite like this before, but with lots of time and resources, even this was possible. 
+          I discovered the existence of a scheduler and this fit my needs perfectly, as it allowed the program to run continuously so long as the local device was on and active. 
+          I set the scheduler to run every hour ensuring they would never miss another class again, and with this being my first real project I was quite proud to reveal it as a Christmas day present. 
+          Over the course of this project I learned a lot about how the backend functions and how its acually quite powerful, being able to manipulate the front the way it does. 
+          Although this experience has also taught me that I need to practice a lot more, so I can continue to improve.  
         </p>
 
       </div>
 
-      <!-- CARD 4 -->
-      <div class="process-card">
-
-        <div class="card-top">
-          <h4>Sprint 4 - Final</h4>
-          <span class="date">March 28, 2026</span>
-        </div>
-
-        <p>
-            For this final sprint I was in charge of adding whatever single feature I deemed myself capable of adding, and I chose to add session persistance. I wanted the application to keep users logged in, even if the browser refreshed as I believe this is a very useful feature of modern browsing.
-            This was actually far simplar than I thought, since the session already existed in the file, all I needed to do was check and see if it still esisted for the logged in user. 
-            After that it was as simple as just calling this function when ever the page loads itself. 
-            Over the course of the sememster I had the opertunity to work with some amazing and insightful people. Together we planned a mock software launch of our Photo App, giving a demonstration to peers and professors. 
-            I learned a lot about what goes on in the backend, and i truly hope to learn much more in the future. 
-        </p>
-
-      </div>
-
-    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
