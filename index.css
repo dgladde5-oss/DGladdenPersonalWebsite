@@ -225,6 +225,27 @@ body {
   font-size: 1.5rem;
 }
 
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 1px solid #5a5a5a;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.resume-button:hover {
+  cursor: pointer;
+  background-color: #202020;
+  transform: translateY(-2px);
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 900px) {
